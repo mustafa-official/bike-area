@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike Area</title>
+    <!-- manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
     <!-- poppins-font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- tailwind -->
+    <!-- tailwind & daisyUI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- tailwind custom colors -->
     <script>
         tailwind.config = {
@@ -20,7 +26,7 @@
                     colors: {
                         primary: '#E76F51',
                         secondary: '#000',
-                        bck:'rgba(231, 111, 81, 0.10)',
+                        bck: 'rgba(231, 111, 81, 0.10)',
                     }
                 }
             }
@@ -30,6 +36,9 @@
     <style>
         .poppins {
             font-family: 'Poppins', sans-serif;
+        }
+        .manrope{
+            font-family: 'Manrope', sans-serif;
         }
     </style>
 
@@ -42,97 +51,260 @@
             <div>
                 <a class="text-secondary font-bold text-2xl md:text-3xl lg:text-4xl" href="">Bike Area</a>
             </div>
-                <ul class=" items-center space-x-9 hidden lg:flex md:flex">
-                    <li><a class="text-secondary text-xl font-medium" href="">Home</a></li>
-                    <li><a class="text-secondary text-xl font-medium" href="">Shop</a></li>
-                    <li><a class="text-secondary text-xl font-medium" href="">News</a></li>
-                    <li><a class="text-secondary text-xl font-medium" href="">Contact</a></li>
-                    <button class="py-4 px-12 bg-primary rounded-md text-white text-xl font-bold">Login</button>
-                </ul>
-                <div class=" flex md:hidden lg:hidden">
-                    <a href=""><img src="./icons/menu.svg" alt=""></a>
-                </div>
-            
+            <ul class=" items-center space-x-9 hidden lg:flex md:flex">
+                <li><a class="text-secondary text-xl font-medium" href="">Home</a></li>
+                <li><a class="text-secondary text-xl font-medium" href="">Shop</a></li>
+                <li><a class="text-secondary text-xl font-medium" href="">News</a></li>
+                <li><a class="text-secondary text-xl font-medium" href="">Contact</a></li>
+                <button class="py-4 px-12 bg-primary rounded-md text-white text-xl font-bold">Login</button>
+            </ul>
+            <div class=" flex md:hidden lg:hidden">
+                <a href=""><img src="./icons/menu.svg" alt=""></a>
+            </div>
+
         </nav>
     </header>
 
-        <!-- banner-section -->
+    <!-- banner-section -->
 
-        <main class="container mx-auto px-7">
+    <main class="container mx-auto px-7">
 
-            <section class="bg-bck rounded-md py-12">
-                
-                
-                        <div class="flex flex-col lg:flex-row md:flex-row justify-evenly items-center lg:gap-0 px-5 lg:px-0">
-                            <div class=" space-y-4 max-w-[475px]">
-                                <h1 class="text-secondary font-bold text-3xl md:text-4xl lg:text-6xl">Ride-on R15 V4 <br>with Smile</h1>
-                                <p class=" text-[16px] lg:text-xl text-secondary opacity-60">Amet minim mollit non deserunt ullamco 
-                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                                    <button class="py-3 lg:py-4 px-6 lg:px-8 bg-primary rounded-md text-white text-[16px] lg:text-xl font-bold">Purchase</button>
-                            </div>
-                            <div>
-                                <img src="./slider/bike1.png" class="w-full" />
-                            </div>
-                        </div>
-                      
-                    
+        <section class="bg-bck rounded-md py-12">
 
 
-            </section>
-
-            <!-- featured section -->
-
-            <section class="mt-10 md:mt-16 lg:mt-20">
+            <div class="flex flex-col lg:flex-row md:flex-row justify-evenly items-center lg:gap-0 px-5 lg:px-0">
+                <div class=" space-y-4 max-w-[475px]">
+                    <h1 class="text-secondary font-bold text-3xl md:text-4xl lg:text-6xl">Ride-on R15 V4 <br>with Smile
+                    </h1>
+                    <p class=" text-[16px] lg:text-xl text-secondary opacity-60">Amet minim mollit non deserunt ullamco
+                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button
+                        class="py-3 lg:py-4 px-6 lg:px-8 bg-primary rounded-md text-white text-[16px] lg:text-xl font-bold">Purchase</button>
+                </div>
                 <div>
-                    <h1 class="text-secondary text-3xl md:text-4xl lg:text-5xl font-semibold text-center">Fetured Bikes In This Year</h1>
-                    <p class="text-primary text-[14px] font-semibold text-center mt-2 mb-1">Best bike collection</p>
-                    <hr class="w-14 border-none h-[1px] bg-primary mx-auto">
+                    <img src="./slider/bike1.png" class="w-full" />
                 </div>
-                <div class="flex justify-between items-center gap-8 lg:gap-0 md:gap-5 flex-col lg:flex-row md:flex-row">
-                    <div class="mt-8">
-                        <img src="./others/feature-bike.png" alt="">
+            </div>
+
+
+
+
+        </section>
+
+        <!-- featured section -->
+
+        <section class="mt-10 md:mt-16 lg:mt-20">
+            <div>
+                <h1 class="text-secondary text-3xl md:text-4xl lg:text-5xl font-semibold text-center">Fetured Bikes In
+                    This Year</h1>
+                <p class="text-primary text-[14px] font-semibold text-center mt-2 mb-1">Best bike collection</p>
+                <hr class="w-14 border-none h-[1px] bg-primary mx-auto">
+            </div>
+            <div class="flex justify-between items-center gap-8 lg:gap-0 md:gap-5 flex-col lg:flex-row md:flex-row">
+                <div class="mt-8">
+                    <img src="./others/feature-bike.png" alt="">
+                </div>
+                <div>
+                    <img src="./others/feature-bike.png" alt="">
+                </div>
+                <div>
+                    <img src="./others/feature-bike.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- news section -->
+
+        <section class=" mt-12 md:mt-16 lg:mt-20">
+            <h1 class="text-secondary text-3xl md:text-4xl lg:text-5xl font-semibold text-center">Latest News</h1>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-y-0 lg:gap-x-5 mt-5 lg:mt-8">
+
+                <div class="space-y-6 p-5 shadow-xl rounded-md">
+                    <img class="w-full" src="./others/latest1.png" alt="">
+                    <h3 class="text-[#18191F] text-2xl font-semibold">Ducati XDIAVEL S-73</h3>
+                    <p class="text-[#6C6C6C] text-[16px] leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                    <button
+                        class="py-3 lg:py-3 px-3 lg:px-5 bg-primary rounded-md text-white text-[16px] lg:text-xl font-bold border-2 border-primary duration-[.4s] hover:bg-transparent hover:text-primary">Read
+                        More</button>
+                </div>
+                <div class="space-y-6 p-5 shadow-xl rounded-md">
+                    <img class="w-full" src="./others/latest2.png" alt="">
+                    <h3 class="text-[#18191F] text-2xl font-semibold">Ducati XDIAVEL S-73</h3>
+                    <p class="text-[#6C6C6C] text-[16px] leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                    <button
+                        class="py-3 lg:py-3 px-3 lg:px-5 bg-primary rounded-md text-white text-[16px] lg:text-xl font-bold border-2 border-primary duration-[.4s] hover:bg-transparent hover:text-primary">Read
+                        More</button>
+                </div>
+                <div class="space-y-6 p-5 shadow-xl rounded-md">
+                    <img class="w-full" src="./others/latest3.png" alt="">
+                    <h3 class="text-[#18191F] text-2xl font-semibold">Ducati XDIAVEL S-73</h3>
+                    <p class="text-[#6C6C6C] text-[16px] leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                    <button
+                        class="py-3 lg:py-3 px-3 lg:px-5 bg-primary rounded-md text-white text-[16px] lg:text-xl font-bold border-2 border-primary duration-[.4s] hover:bg-transparent hover:text-primary">Read
+                        More</button>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- client section -->
+
+        <section class=" mt-12 md:mt-16 lg:mt-20">
+            <h1 class="text-secondary text-3xl md:text-4xl lg:text-5xl font-semibold text-center">Happy <span
+                    class="text-primary">Clients says</span></h1>
+            <div
+                class="grid md:grid-cols-3 grid-cols-1 lg:grid-cols-3 gap-y-7 md:gap-y-0 lg:gap-y-0 md:gap-x-7 lg:gap-x-11 mt-10">
+                <div class="space-y-4 text-center border border-[#DEDEDE] rounded-md px-9 py-10">
+                    <img class="w-40 block mx-auto" src="./others/user-1.png" alt="">
+                    <p class="max-w-64 text-[#6C6C6C] text-[16px] mx-auto">Slate helps you see how
+                        many more days you need
+                        to work to reach your financial
+                        goal for the month and year.</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
-                    <div>
-                        <img src="./others/feature-bike.png" alt="">
+                    <p class="text-[#23A6F0] text-[14px] font-semibold">Regina Miles</p>
+                    <p class="text-[#252B42] text-[14px] font-semibold">Banker</p>
+                </div>
+
+                <div class="space-y-4 text-center border border-[#DEDEDE] rounded-md px-9 py-10">
+                    <img class="w-40 block mx-auto" src="./others/user-2.png" alt="">
+                    <p class="max-w-64 text-[#6C6C6C] text-[16px] mx-auto">Slate helps you see how
+                        many more days you need
+                        to work to reach your financial
+                        goal for the month and year.</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
-                    <div>
-                        <img src="./others/feature-bike.png" alt="">
+                    <p class="text-[#23A6F0] text-[14px] font-semibold">Regina Miles</p>
+                    <p class="text-[#252B42] text-[14px] font-semibold">Banker</p>
+                </div>
+
+                <div class="space-y-4 text-center border border-[#DEDEDE] rounded-md px-9 py-10">
+                    <img class="w-40 block mx-auto" src="./others/user-3.png" alt="">
+                    <p class="max-w-64 text-[#6C6C6C] text-[16px] mx-auto">Slate helps you see how
+                        many more days you need
+                        to work to reach your financial
+                        goal for the month and year.</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="text-[#23A6F0] text-[14px] font-semibold">Regina Miles</p>
+                    <p class="text-[#252B42] text-[14px] font-semibold">Banker</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ section -->
+
+        <section class="mt-9 lg:mt-20">
+            <h1 class="text-secondary text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-6 md:mb-8 lg:mb-10">
+                Frequently Asked <span class="text-primary">Questions</span></h1>
+
+            <div
+                class="flex justify-between items-center flex-col gap-y-8 md:gap-y-0 lg:gap-y-0 md:flex-row lg:flex-row">
+                <div class="w-[100%] md:w-[40%] lg:w-[40%]">
+                    <img class="max-w-[60%] mx-auto md:mx-0 lg:mx-0 md:max-w-96 lg:max-w-96" src="./others/faq.png"
+                        alt="">
+                </div>
+
+                <div class="w-[100%] md:w-[60%] lg:w-[60%]">
+                    <div class="join join-vertical w-full">
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                            <input type="radio" name="my-accordion-4" checked="checked" />
+                            <div class="collapse-title text-[18px] md:text-xl lg:text-xl font-medium">
+                                What are the most important things I should
+                                know about riding a bike?
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[16px]">Safety First! Always obey the rules of the road. Obey all traffic
+                                    signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider. </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                            <input type="radio" name="my-accordion-4" />
+                            <div class="collapse-title text-[18px] md:text-xl lg:text-xl font-medium">
+                                How can I tell if my helmet is old and I need a
+                                new one?
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[16px]">You can do it if you can't run more than five feet.You can do it
+                                    if you can't run more than five feet.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                            <input type="radio" name="my-accordion-4" />
+                            <div class="collapse-title text-[18px] md:text-xl lg:text-xl font-medium">
+                                My bike has been in storage is it safe to ride?
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[16px]">You can do it if you can't run more than five feet.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                            <input type="radio" name="my-accordion-4" />
+                            <div class="collapse-title text-[18px] md:text-xl lg:text-xl font-medium">
+                                What rules should I follow when riding my bike?
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[16px]">You can do it if you can't run more than five feet.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- news section -->
+    </main>
 
-            <section class=" mt-12 md:mt-16 lg:mt-20">
-                <h1 class="text-secondary text-3xl md:text-4xl lg:text-5xl font-semibold text-center">Latest News</h1>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-y-0 lg:gap-x-5 mt-5 lg:mt-8">
-                    
-                        <div class="space-y-6 p-5 shadow-xl rounded-md">
-                            <img class="w-full" src="./others/latest1.png" alt="">
-                            <h3 class="text-[#18191F] text-2xl font-semibold">Ducati XDIAVEL S-73</h3>
-                            <p class="text-[#6C6C6C] text-[16px] leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
-                            <button class="py-3 lg:py-3 px-3 lg:px-5 bg-primary rounded-md text-white text-[16px] lg:text-xl font-bold border-2 border-primary duration-[.4s] hover:bg-transparent hover:text-primary">Read More</button>
-                        </div>
-                        <div class="space-y-6 p-5 shadow-xl rounded-md">
-                            <img class="w-full" src="./others/latest2.png" alt="">
-                            <h3 class="text-[#18191F] text-2xl font-semibold">Ducati XDIAVEL S-73</h3>
-                            <p class="text-[#6C6C6C] text-[16px] leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
-                            <button class="py-3 lg:py-3 px-3 lg:px-5 bg-primary rounded-md text-white text-[16px] lg:text-xl font-bold border-2 border-primary duration-[.4s] hover:bg-transparent hover:text-primary">Read More</button>
-                        </div>
-                        <div class="space-y-6 p-5 shadow-xl rounded-md">
-                            <img class="w-full" src="./others/latest3.png" alt="">
-                            <h3 class="text-[#18191F] text-2xl font-semibold">Ducati XDIAVEL S-73</h3>
-                            <p class="text-[#6C6C6C] text-[16px] leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
-                            <button class="py-3 lg:py-3 px-3 lg:px-5 bg-primary rounded-md text-white text-[16px] lg:text-xl font-bold border-2 border-primary duration-[.4s] hover:bg-transparent hover:text-primary">Read More</button>
-                        </div>
-            
-
-                    
-                    </div>
-            </section>
+    <footer class="bg-[#0B0D17] manrope mt-10 md:mt-20 lg:mt-20">
         
-        </main>
+        <div class="container mx-auto px-7 flex flex-col md:flex-row lg:flex-row  justify-between items-center py-8 lg:py-10 ">
+            
+                <div class="text-white text-[16px] ">
+                    <div class="flex gap-x-6 flex-wrap">
+                     <a href="">Download Now</a>
+                     <a href="">License</a>
+                    </div>
+                     <div class="flex flex-wrap gap-x-6 mt-3 mb-6">
+                         <a href="">About</a>
+                         <a href="">Features</a>
+                         <a href="">Pricing</a>
+                         <a href="">Careers</a>
+                         <a href="">Help</a>
+                         <a href="">Privacy Policy</a>
+                     </div>
+                     <p class="text-[14px] hidden lg:block md:block">© 2024 Bike Area. All rights reserved</p>
+                 </div>
+                 <div class="space-y-4">
+                     <p class="text-[#D9DBE1] text-[18px] mx-auto text-center lg:text-left md:text-left lg:mx-0 md:mx-0">Get the App</p>
+                     <img class="w-[135px] cursor-pointer" src="./others/ios.png" alt="">
+                     <img class="w-[135px] cursor-pointer" src="./others/android.png" alt="">
+                 </div>
+                 <p class="text-[14px] text-white text-center mt-4 block lg:hidden md:hidden">© 2024 Bike Area. All rights reserved</p>
+            </div>
+        
+    </footer>
 
 
 </body>
